@@ -19,9 +19,3 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-
-/.ideas
-
-package-lock\.json
-
-\.idea/
