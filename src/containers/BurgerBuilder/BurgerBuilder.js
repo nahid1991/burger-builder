@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+ import React, {Component} from 'react';
 import {connect} from 'react-redux';
 
 import Auxiliary from '../../hoc/Auxiliary/Auxiliary';
@@ -19,8 +19,7 @@ const INGREDIENT_PRICES = {
 }
 
 class BurgerBuilder extends Component {
-    state = {
-        ingredients: null,
+    state = { 
         totalPrice: 4,
         purchasable: false,
         purchasing: false,
@@ -112,7 +111,7 @@ class BurgerBuilder extends Component {
 
     render () {
         const disabledInfo = {
-            ...this.state.ings
+            ...this.props.ings
         };
 
         for(let key in disabledInfo) {
